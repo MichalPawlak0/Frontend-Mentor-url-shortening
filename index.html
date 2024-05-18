@@ -3,6 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="style.css" />
 		<script src="script.js"></script>
 		<link
@@ -14,8 +20,10 @@
 		<title>Shortly URL shortening API Challenge</title>
 	</head>
 	<body>
-		<header class="header">
-			<div class="header__logo">LOGO</div>
+		<header class="header container">
+			<div class="header__logo">
+				<img src="images/logo.svg" alt="Shortly logo" />
+			</div>
 			<nav class="header__nav">
 				<ul class="header__list">
 					<li class="nav__btn"><a class="nav__link">Features</a></li>
@@ -28,12 +36,12 @@
 				</ul>
 			</nav>
 		</header>
-		<main>
+		<main class="container">
 			<section class="section__hero">
 				<div class="hero__text-box">
 					<h1 class="heading--primary">More than just shorter links</h1>
 					<h2 class="heading--secondary">
-						Build your brand’s recognition and get detailed insights on how your
+						Build your brand's recognition and get detailed insights on how your
 						links are performing.
 					</h2>
 				</div>
@@ -87,32 +95,48 @@
 				<button class="button__cta">Get Started</button>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer container">
 			<div class="footer__logo">LOGO</div>
 			<div class="footer__links">
 				<div class="footer__column">
 					<h5 class="heading--five">Features</h5>
 					<ul class="footer__list">
-						<li class="footer__list-item"><a>Link Shortening</a></li>
-						<li class="footer__list-item"><a>Branded Links</a></li>
-						<li class="footer__list-item"><a>Analytics</a></li>
+						<li class="footer__list-item">
+							<a class="footer__link">Link Shortening</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__link">Branded Links</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__link">Analytics</a>
+						</li>
 					</ul>
 				</div>
 				<div class="footer__column">
 					<h5 class="heading--five">Resources</h5>
 					<ul class="footer__list">
-						<li class="footer__list-item"><a>Blog</a></li>
-						<li class="footer__list-item"><a>Developers</a></li>
-						<li class="footer__list-item"><a>Support</a></li>
+						<li class="footer__list-item"><a class="footer__link">Blog</a></li>
+						<li class="footer__list-item">
+							<a class="footer__link">Developers</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__link">Support</a>
+						</li>
 					</ul>
 				</div>
 				<div class="footer__column">
 					<h5 class="heading--five">Company</h5>
 					<ul class="footer__list">
-						<li class="footer__list-item"><a>About</a></li>
-						<li class="footer__list-item"><a>Our Team</a></li>
-						<li class="footer__list-item"><a>Careers</a></li>
-						<li class="footer__list-item"><a>Contact</a></li>
+						<li class="footer__list-item"><a class="footer__link">About</a></li>
+						<li class="footer__list-item">
+							<a class="footer__link">Our Team</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__link">Careers</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__link">Contact</a>
+						</li>
 					</ul>
 				</div>
 			</div>
