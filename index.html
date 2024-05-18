@@ -36,8 +36,8 @@
 				</ul>
 			</nav>
 		</header>
-		<main class="container">
-			<section class="section__hero">
+		<main class="">
+			<section class="section__hero container">
 				<div class="hero__text-box">
 					<h1 class="heading--primary">More than just shorter links</h1>
 					<h2 class="heading--secondary">
@@ -50,38 +50,55 @@
 					<img class="hero-image" src="images/illustration-working.svg" />
 				</div>
 			</section>
-			<section class="section__input">
-				<input class="input" type="text" name="textInput" id="textInput" />
+			<section class="section__input container">
+				<input
+					class="input"
+					type="text"
+					name="textInput"
+					id="textInput"
+					placeholder="Shorten a link here..."
+				/>
 				<button class="input__button">Shorten It!</button>
 			</section>
 			<section class="section__features">
-				<hgroup class="features__intro">
-					<h3 class="heading--tertiary">Advanced Statistics</h3>
-					<div class="features__subheading">
-						Track how your links are performing across the web with our advanced
-						statistics dashboard.
-					</div>
-				</hgroup>
-				<div class="features__container">
-					<div class="feature">
-						<img class="feature__img" />
-						<h4 class="heading--quaternary">Brand Recognition</h4>
-						<div class="feature__text">
-							Boost your brand recognition with each click. Generic links don’t
-							mean a thing. Branded links help instil confidence in your
-							content.
+				<div class="container">
+					<hgroup class="features__intro">
+						<h3 class="heading--tertiary">Advanced Statistics</h3>
+						<div class="features__subheading">
+							Track how your links are performing across the web with our
+							advanced statistics dashboard.
 						</div>
-					</div>
-					<div class="feature">
-						<img class="feature__img" />
-						<h4 class="heading--quaternary">Detailed Records</h4>
-						<div class="feature__text">
-							Gain insights into who is clicking your links. Knowing when and
-							where people engage with your content helps inform better
-							decisions.
+					</hgroup>
+					<div class="features__container">
+						<div class="feature">
+							<img
+								class="feature__img"
+								src="images/icon-brand-recognition.svg"
+							/>
+							<h4 class="heading--quaternary">Brand Recognition</h4>
+							<div class="feature__text">
+								Boost your brand recognition with each click. Generic links
+								don’t mean a thing. Branded links help instil confidence in your
+								content.
+							</div>
 						</div>
 						<div class="feature">
-							<img class="feature__img" />
+							<img
+								class="feature__img"
+								src="images/icon-detailed-records.svg"
+							/>
+							<h4 class="heading--quaternary">Detailed Records</h4>
+							<div class="feature__text">
+								Gain insights into who is clicking your links. Knowing when and
+								where people engage with your content helps inform better
+								decisions.
+							</div>
+						</div>
+						<div class="feature">
+							<img
+								class="feature__img"
+								src="images/icon-fully-customizable.svg"
+							/>
 							<h4 class="heading--quaternary">Fully Customizable</h4>
 							<div class="feature__text">
 								Improve brand awareness and content discoverability through
@@ -89,9 +106,10 @@
 							</div>
 						</div>
 					</div>
+					<hr class="line" />
 				</div>
 			</section>
-			<section class="section__cta">
+			<section class="section__cta container">
 				<h3 class="heading--tertiary">Boost your links today</h3>
 				<button class="button__cta">Get Started</button>
 			</section>
