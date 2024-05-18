@@ -1,85 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Features
-  Pricing
-  Resources
-
-  Login
-  Sign Up
-
-  More than just shorter links
-
-  Build your brand’s recognition and get detailed insights 
-  on how your links are performing.
-
-  Get Started
-  
-  Shorten a link here...
-
-  Shorten It!
-
-  Advanced Statistics
-
-  Track how your links are performing across the web with our 
-  advanced statistics dashboard.
-
-  Brand Recognition
-
-  Boost your brand recognition with each click. Generic links don’t 
-  mean a thing. Branded links help instil confidence in your content.
-
-  Detailed Records
-
-  Gain insights into who is clicking your links. Knowing when and where 
-  people engage with your content helps inform better decisions.
-
-  Fully Customizable
-
-  Improve brand awareness and content discoverability through customizable 
-  links, supercharging audience engagement.
-
-  Boost your links today
-
-  Get Started
-
-  Features
-
-  Link Shortening
-  Branded Links
-  Analytics
-
-  Resources
-
-  Blog
-  Developers
-  Support
-
-  Company
-
-  About
-  Our Team
-  Careers
-  Contact
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<title>Shortly URL shortening API Challenge</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__logo">LOGO</div>
+			<nav class="header__nav">
+				<ul class="header__list">
+					<li class="nav__btn"><a class="nav__link">Features</a></li>
+					<li class="nav__btn"><a class="nav__link">Pricing</a></li>
+					<li class="nav__btn"><a class="nav__link">Resources</a></li>
+				</ul>
+				<ul class="header__list">
+					<li class="nav__btn"><a class="nav__link">Login</a></li>
+					<li class="nav__btn signup"><a class="nav__link">Sign up</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="section__hero">
+				<div class="hero__text-box">
+					<h1 class="heading--primary">More than just shorter links</h1>
+					<h2 class="heading--secondary">
+						Build your brand’s recognition and get detailed insights on how your
+						links are performing.
+					</h2>
+				</div>
+				<div class="hero__button-box">
+					<button class="hero__button">Get Started</button>
+				</div>
+			</section>
+			<section class="section__input">
+				<input class="input" type="text" name="textInput" id="textInput" />
+				<button class="input__button">Shorten It!</button>
+			</section>
+			<section class="section__features">
+				<hgroup class="features__intro">
+					<h3 class="heading--tertiary">Advanced Statistics</h3>
+					<div class="features__subheading">
+						Track how your links are performing across the web with our advanced
+						statistics dashboard.
+					</div>
+				</hgroup>
+				<div class="features__container">
+					<div class="feature">
+						<img class="feature__img" />
+						<h4 class="heading--quaternary">Brand Recognition</h4>
+						<div class="feature__text">
+							Boost your brand recognition with each click. Generic links don’t
+							mean a thing. Branded links help instil confidence in your
+							content.
+						</div>
+					</div>
+					<div class="feature">
+						<img class="feature__img" />
+						<h4 class="heading--quaternary">Detailed Records</h4>
+						<div class="feature__text">
+							Gain insights into who is clicking your links. Knowing when and
+							where people engage with your content helps inform better
+							decisions.
+						</div>
+						<div class="feature">
+							<img class="feature__img" />
+							<h4 class="heading--quaternary">Fully Customizable</h4>
+							<div class="feature__text">
+								Improve brand awareness and content discoverability through
+								customizable links, supercharging audience engagement.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section__cta">
+				<h3 class="heading--tertiary">Boost your links today</h3>
+				<button class="button__cta">Get Started</button>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__logo">LOGO</div>
+			<div class="footer__links">
+				<div class="footer__column">
+					<h5 class="heading--five">Features</h5>
+					<ul class="footer__list">
+						<li class="footer__list-item"><a>Link Shortening</a></li>
+						<li class="footer__list-item"><a>Branded Links</a></li>
+						<li class="footer__list-item"><a>Analytics</a></li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h5 class="heading--five">Resources</h5>
+					<ul class="footer__list">
+						<li class="footer__list-item"><a>Blog</a></li>
+						<li class="footer__list-item"><a>Developers</a></li>
+						<li class="footer__list-item"><a>Support</a></li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h5 class="heading--five">Company</h5>
+					<ul class="footer__list">
+						<li class="footer__list-item"><a>About</a></li>
+						<li class="footer__list-item"><a>Our Team</a></li>
+						<li class="footer__list-item"><a>Careers</a></li>
+						<li class="footer__list-item"><a>Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__socials">
+				<i class="social__icon">FB</i>
+				<i class="social__icon">X</i>
+				<i class="social__icon">Pinterest</i>
+				<i class="social__icon">IG</i>
+			</div>
+			<div class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by
+				<a href="https://michal-pawlak.netlify.app/">Michał Pawlak</a>.
+			</div>
+		</footer>
+	</body>
 </html>
