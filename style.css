@@ -324,8 +324,6 @@ body{
   justify-content: space-between;
   gap: 5vw;
 }
-.footer__logo{
-}
 .footer__logo img{
   display: block;
   filter: brightness(10);
@@ -335,9 +333,6 @@ body{
   flex: 1;
   gap: 10%;
   justify-content: flex-end;
-}
-.footer__column{
-  
 }
 .footer__list{
   margin-top: 2rem;
