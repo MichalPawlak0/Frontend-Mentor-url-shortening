@@ -9,13 +9,21 @@
 			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,500;1,700&display=swap"
 			rel="stylesheet"
 		/>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule=""
+			src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+		></script>
 		<link rel="stylesheet" href="style.css" />
-		<script src="script.js"></script>
+		<script src="script.js" defer></script>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="./images/favicon-32x32.png"
+			href="./images/logo-white32x32.png"
 		/>
 		<title>Shortly URL shortening API Challenge</title>
 	</head>
@@ -26,31 +34,45 @@
 			</div>
 			<nav class="header__nav">
 				<ul class="header__list">
-					<li class="nav__btn"><a class="nav__link">Features</a></li>
-					<li class="nav__btn"><a class="nav__link">Pricing</a></li>
-					<li class="nav__btn"><a class="nav__link">Resources</a></li>
+					<li class="nav__btn">
+						<a class="nav__link" href="#features">Features</a>
+					</li>
+					<li class="nav__btn"><a class="nav__link" href="#cta">Pricing</a></li>
+					<li class="nav__btn">
+						<a class="nav__link" href="#cta">Resources</a>
+					</li>
 				</ul>
 				<ul class="header__list">
-					<li class="nav__btn"><a class="nav__link">Login</a></li>
-					<li class="nav__btn signup"><a class="nav__link">Sign up</a></li>
+					<li class="nav__btn"><a class="nav__link" href="#">Login</a></li>
+					<li class="nav__btn signup">
+						<a class="nav__link" href="#cta">Sign up</a>
+					</li>
 				</ul>
 			</nav>
+			<button class="button--mobile-nav">
+				<ion-icon
+					class="icon-mobile-nav md hydrated"
+					name="menu-outline"
+					role="img"
+					aria-label="menu outline"
+				></ion-icon>
+			</button>
 		</header>
 		<main class="">
-			<section class="section__hero container">
+			<section class="section__hero container" id="hero">
 				<div class="hero__text-box">
 					<h1 class="heading--primary">More than just shorter links</h1>
 					<h2 class="heading--secondary">
 						Build your brand's recognition and get detailed insights on how your
 						links are performing.
 					</h2>
-					<button class="hero__button">Get Started</button>
+					<button class="hero__button"><a href="#cta">Get Started</a></button>
 				</div>
 				<div class="hero__image-box">
 					<img class="hero-image" src="images/illustration-working.svg" />
 				</div>
 			</section>
-			<section class="section__input container">
+			<section class="section__input container" id="input">
 				<input
 					class="input"
 					type="text"
@@ -58,9 +80,13 @@
 					id="textInput"
 					placeholder="Shorten a link here..."
 				/>
-				<button class="input__button">Shorten It!</button>
+				<button class="input__button" id="inputButton">Shorten It!</button>
 			</section>
-			<section class="section__features">
+
+			<section class="section__features" id="features">
+				<div class="section__results container">
+					<div class="input__results"></div>
+				</div>
 				<div class="container">
 					<hgroup class="features__intro">
 						<h3 class="heading--tertiary">Advanced Statistics</h3>
@@ -109,7 +135,7 @@
 					<hr class="line" />
 				</div>
 			</section>
-			<section class="section__cta">
+			<section class="section__cta" id="cta">
 				<div class="container">
 					<h3 class="heading--tertiary">Boost your links today</h3>
 					<button class="button__cta">Get Started</button>
